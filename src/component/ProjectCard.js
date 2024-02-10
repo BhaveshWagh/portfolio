@@ -5,20 +5,20 @@ import { GITHUB_LINK } from "../utils/constants";
 const ProjectCard = () => {
   return (
     <div className="pt-10">
-      <section className="text-center bg-gray-100 p-4 mx-36 mb-10 rounded-3xl">
-        <h1 className="text-2xl font-bold p-4">
+      <section className="text-center bg-gray-100 p-4 md:mx-36 mb-10 rounded-3xl">
+        <h1 className="text-2xl font-bold p-4 text-slate-700">
           Video Streaming App - YouTube Clone
         </h1>
-        <p className="p-5 text-xl">
+        <p className="p-5  md:text-xl">
           This is a clone of the popular video-sharing platform YouTube,
           developed as a part of Akshay Saini's Namaste React course. It is
           built using modern front-end technologies, including React, Redux
           Toolkit, TailwindCSS, and other libraries.
         </p>
-        <p className=" text-white">
-          <span className="bg-gray-700 p-2 rounded-lg">
-            <span className="font-bold ">Tech Stack</span>- React, Redux,
-            TailwindCSS, Shimmer UI
+        <p className=" ">
+          <span className="  md:text-white  md:bg-gray-700 md:p-2 text:sm p-1 rounded-lg">
+            <span className="font-bold  text:sm">Tech Stack</span> - React,
+            Redux, TailwindCSS, Shimmer UI
           </span>
         </p>
         <div className="pt-5">
@@ -34,16 +34,22 @@ const ProjectCard = () => {
           </button>
         </div>
       </section>
-      
-      <section className="text-center border p-4 mx-36 mb-10 rounded-3xl">
-        <h1 className="text-2xl font-bold p-4">
+
+      <section className="text-center border p-4 md:mx-36 mb-10 rounded-3xl">
+        <h1 className="text-2xl font-bold p-4 text-slate-700">
           Food ordering App - FoodiiFi (Swiggy-Clone)
         </h1>
-        <p className="p-5 text-xl">
-        The food ordering app project utilized Swiggy data for practice purposes and implemented dynamic routing, custom hooks, and code splitting using Parcel.js for optimal performance. Shimmer UI was utilized for real-time updates via APIs and asynchronous requests. The project helped expand knowledge in web development and provided valuable experience in building a user-friendly and practical application.
+        <p className="p-5  md:text-xl">
+          The food ordering app project utilized Swiggy data for practice
+          purposes and implemented dynamic routing, custom hooks, and code
+          splitting using Parcel.js for optimal performance. Shimmer UI was
+          utilized for real-time updates via APIs and asynchronous requests. The
+          project helped expand knowledge in web development and provided
+          valuable experience in building a user-friendly and practical
+          application.
         </p>
-        <p className=" text-white">
-          <span className="bg-gray-700 p-2 rounded-lg">
+        <p className=" ">
+          <span className="md:text-white md:bg-gray-700 p-2 rounded-lg">
             <span className="font-bold ">Tech Stack</span>- React, Redux,
             TailwindCSS, React-Router-Dom
           </span>

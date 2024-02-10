@@ -13,11 +13,11 @@ const Body = () => {
         </p>
       </div>
 
-      <section className="text-center p-20  my-10 mx-36 bg-gray-100 rounded-3xl">
-        <p className="text-2xl texg font-bold">Technologies</p>
-        <p className="pt-5">
+      <section className="text-center p-10  md:p-20 my-10 md:mx-36 bg-gray-100 rounded-3xl">
+        <p className="text-2xl texg font-bold text-slate-700">Technologies</p>
+        <p className="pt-5 text-md md:text-xl">
           I'm familiar with
-          <span class="font-bold px-1 text-xl">
+          <span class="font-bold px-1 text-sm md:text-xl">
             Reactjs, Javascript, Redux-Toolkit, Python, Tailwind-CSS, SQL, HTML,
             CSS, & Git
           </span>
@@ -25,14 +25,14 @@ const Body = () => {
         </p>
       </section>
 
-      <section className="text-center p-10 mx-36  rounded-3xl border  my-10">
-        <p className="text-2xl texg font-bold">Projects</p>
-        <p className="pt-5 text-xl">
+      <section className="text-center p-10 md:mx-36 rounded-3xl border  my-10">
+        <p className="text-2xl texg font-bold text-slate-700">Projects</p>
+        <p className="pt-5 text-md md:text-xl">
           I like to showcase my work and thus, you can see my projects hosted
           online.
         </p>
         <div className="pt-8">
-          <button className="px-4 py-2 text-xl rounded-lg cursor-pointer bg-green-600 text-white">
+          <button className=" px-4 py-2 md:text-xl rounded-lg cursor-pointer bg-green-600 text-white">
             <Link to="/project">See Projects</Link>
           </button>
         </div>
