@@ -41,17 +41,12 @@ const About = () => {
       <section className="text-center border p-4 md:mx-36 mb-10 rounded-3xl">
         <h1 className="text-2xl font-bold p-4 text-slate-700">Contact Me</h1>
         <p className="p-5 md:text-xl">
-          The food ordering app project utilized Swiggy data for practice
-          purposes and implemented dynamic routing, custom hooks, and code
-          splitting using Parcel.js for optimal performance. Shimmer UI was
-          utilized for real-time updates via APIs and asynchronous requests. The
-          project helped expand knowledge in web development and provided
-          valuable experience in building a user-friendly and practical
-          application.
+          If you think I'm a better fit for the position, please let me know.
+          Thank you so much for devoting your valuable time.
         </p>
 
         <div className="pt-5">
-          <button className="bg-gray-800 text-white p-1 border border-gray-800 rounded-lg ">
+          <button className=" p-1 border border-gray-800 rounded-lg ">
             <Link to="/contact">Contact Me</Link>
           </button>
         </div>
