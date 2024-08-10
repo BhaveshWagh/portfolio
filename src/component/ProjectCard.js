@@ -16,13 +16,13 @@ const ProjectCard = () => {
         <h1 className="text-2xl font-bold p-4 text-slate-700">
           Video Streaming App - YouTube Clone
         </h1>
-        <p className="p-5  md:text-xl">
+        <p className="p-5 md:text-xl">
           This is a clone of the popular video-sharing platform YouTube,
           developed as a part of Akshay Saini's Namaste React course. It is
           built using modern front-end technologies, including React, Redux
           Toolkit, TailwindCSS, and other libraries.
         </p>
-        <p className=" ">
+        <p className="">
           <span className="  md:text-white  md:bg-gray-700 md:p-2 text:sm p-1 rounded-lg">
             <span className="font-bold  text:sm">Tech Stack</span> - React,
             Redux, TailwindCSS, Shimmer UI
@@ -59,7 +59,7 @@ const ProjectCard = () => {
           valuable experience in building a user-friendly and practical
           application.
         </p>
-        <p className=" ">
+        <p className="">
           <span className="md:text-white md:bg-gray-700 p-2 rounded-lg">
             <span className="font-bold ">Tech Stack</span>- React, Redux,
             TailwindCSS, React-Router-Dom
@@ -149,7 +149,11 @@ const ProjectCard = () => {
             </Link>
           </button>
           <button className="border border-gray-800 p-1 mx-2 rounded-lg ">
-            <Link to={MOVIE_HOSTED_URL} target="_blank" rel="noopener noreferrer">
+            <Link
+              to={MOVIE_HOSTED_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               live Demo
             </Link>
           </button>

@@ -3,10 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
-  
+
   return (
     <div className="flex justify-center md:justify-between bg-white shadow-xl flex-wrap  md:flex-nowrap p-5 sticky top-0">
-      <div className="p-2">
+      <div className="p-2 flex gap-6 justify-center items-center">
+        <div className="pulser mt-2"></div>
         <p className="text-3xl font-bold text-slate-800">
           <Link to="/">Bhavesh Wagh</Link>
         </p>
