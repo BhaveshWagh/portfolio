@@ -46,25 +46,8 @@ const Contact = () => {
           )
         </Link>
       </p>
-
-      
     </div>
   );
 };
 
 export default Contact;
-
-// <form className="m-auto mt-6 grid gap-4 w-1/3">
-//         <label>Email </label>
-//         <input type="text" />
-
-//         <label>Name </label>
-//         <input type="text" />
-
-//         <label>Message </label>
-//         <textarea cols="20" rows="10"></textarea>
-
-//         <button className="bg-gray-300 w-1/4 mb-8 rounded-lg p-2">
-//           Submit
-//         </button>
-//       </form>

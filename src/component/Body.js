@@ -12,7 +12,6 @@ const Body = () => {
           <span class="text-green-400"> Front-End Web Developer</span>
         </p>
       </div>
-
       <section className="text-center p-10  md:p-20 my-10 md:mx-36 bg-gray-100 rounded-3xl">
         <p className="text-2xl texg font-bold text-slate-700">Technologies</p>
         <p className="pt-5 text-md md:text-xl">
