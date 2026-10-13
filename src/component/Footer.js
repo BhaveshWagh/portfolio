@@ -1,29 +1,45 @@
 import { Link } from "react-router-dom";
-import { LINKEDIN_URL } from "../utils/constants";
+import { EMAIL, GITHUB_LINK, LINKEDIN_URL } from "../utils/constants";
+import { GithubIcon, LinkedinIcon, MailIcon } from "./Icons";
 
-// import { LINKEDIN_URL } from "../constants";
+const SOCIALS = [
+  { href: GITHUB_LINK, label: "GitHub", Icon: GithubIcon },
+  { href: LINKEDIN_URL, label: "LinkedIn", Icon: LinkedinIcon },
+  { href: `mailto:${EMAIL}`, label: "Email", Icon: MailIcon },
+];
+
 const Footer = () => {
   return (
-    <div className="footer ">
-      <div className="footer-items text-center md:flex bg-green-200 shadow-lg justify-center p-10 showdow-lg">
-        Made with in India ❤
-        <div className="mx-1">
-          {" "}
-          <span className="font-bold text-slate-700">
-            No &copy; copyright issues.{" "}
-          </span>{" "}
-          Feel free to copy. If you need any help, ping me !
+    <footer className="border-t border-white/10 bg-ink-950">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-4 py-10 sm:px-6 md:flex-row">
+        <div className="text-center md:text-left">
+          <Link to="/" className="text-lg font-semibold text-white">
+            Bhavesh Wagh
+          </Link>
+          <p className="mt-1 text-sm text-slate-500">
+            Made with <span className="text-rose-400">❤</span> in India. No
+            copyright issues, feel free to copy. If you need any help, ping me!
+          </p>
         </div>
-        <Link
-          className="font-bold text-base text-gray-500"
-          to={LINKEDIN_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Bhavesh Wagh
-        </Link>
+        <div className="flex items-center gap-3">
+          {SOCIALS.map(({ href, label, Icon }) => (
+            <a
+              key={label}
+              href={href}
+              target={href.startsWith("mailto") ? undefined : "_blank"}
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-emerald-400/50 hover:text-emerald-400"
+            >
+              <Icon className="h-5 w-5" />
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+      <div className="border-t border-white/5 py-4 text-center text-xs text-slate-600">
+        © {new Date().getFullYear()} Bhavesh Wagh · Built with React & Tailwind CSS
+      </div>
+    </footer>
   );
 };
 

@@ -13,3 +13,6 @@ export const TODO_HOSTED_URL = "https://regal-kulfi-7d1bc6.netlify.app/"
 export const MOVIE_GIT_URL =  "https://github.com/BhaveshWagh/Movies-Web-App"
 export const MOVIE_HOSTED_URL =  "https://rad-biscotti-3a7dce.netlify.app/"
 
+
+export const EMAIL = "bhaveshbm2711@gmail.com"
+export const PHONE = "7058857983"
