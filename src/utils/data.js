@@ -10,10 +10,16 @@ import {
 } from "./constants";
 
 export const SKILLS = [
-  { group: "Frontend", items: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "SCSS"] },
-  { group: "State & Routing", items: ["Redux Toolkit", "Context API", "React Router", "Custom Hooks"] },
-  { group: "Backend & Data", items: ["Python", "SQL", "REST APIs"] },
-  { group: "Tools", items: ["Git", "GitHub", "Netlify", "Parcel"] },
+  { group: "Frontend", items: ["React.js", "JavaScript", "HTML/CSS", "Tailwind CSS", "Bootstrap"] },
+  { group: "State Management", items: ["Redux", "Redux Thunk", "Redux Toolkit", "Context API"] },
+  { group: "Backend & Databases", items: ["Node.js", "Express.js", "MongoDB", "RESTful APIs", "Authentication", "Redis", "SQL"] },
+  { group: "Tools & AI", items: ["Git", "GitHub", "Model Context Protocol (MCP)"] },
+];
+
+export const STATS = [
+  { value: "1.5+", label: "Years of experience" },
+  { value: "MERN", label: "Full-stack" },
+  { value: "4+", label: "Projects built" },
 ];
 
 export const PROJECTS = [

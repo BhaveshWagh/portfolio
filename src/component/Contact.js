@@ -60,7 +60,7 @@ const Contact = () => {
       <section className="relative mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-24">
         <Reveal>
           <SectionHeading eyebrow="Contact" title="Let's get in touch" center>
-            I'm open to front-end internships and full-time roles. The fastest
+            I'm open to new Software Engineer opportunities. The fastest
             way to reach me is by email or LinkedIn.
           </SectionHeading>
         </Reveal>

@@ -15,30 +15,33 @@ const PHOTO = `${process.env.PUBLIC_URL}/Bhavesh-s-Photo.png`;
 
 const HIGHLIGHTS = [
   {
-    Icon: CapIcon,
-    title: "Computer Engineering Graduate",
-    text: "A solid understanding of Python, JavaScript, React.js, HTML, CSS, Git and SQL.",
-  },
-  {
     Icon: CodeIcon,
-    title: "Front-End Focused",
-    text: "Building responsive interfaces with React, Redux Toolkit, Tailwind CSS and modern JavaScript.",
+    title: "Full-Stack MERN Development",
+    text: "Modern front-end interfaces, RESTful APIs, authentication systems and performance-optimised applications.",
   },
   {
     Icon: SparkIcon,
-    title: "Growing Toward Full-Stack",
-    text: "Expanding into Python, SQL and APIs to own features end to end.",
+    title: "Clean, Maintainable Code",
+    text: "Redux, Redis, Tailwind CSS, Bootstrap, SQL, Git and modern development practices for efficient solutions.",
+  },
+  {
+    Icon: CapIcon,
+    title: "Ownership & Continuous Learning",
+    text: "Strong ownership, adaptability and attention to detail in collaborative, fast-paced environments.",
   },
 ];
 
 const CORE_SKILLS = [
-  "Python",
-  "JavaScript",
   "React.js",
-  "HTML",
-  "CSS",
-  "Git",
-  "SQL",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "JavaScript",
+  "Redux",
+  "Redux Thunk",
+  "Tailwind CSS",
+  "HTML/CSS",
+  "MCP",
 ];
 
 const About = () => {
@@ -63,18 +66,20 @@ const About = () => {
         <Reveal delay={100}>
           <SectionHeading eyebrow="About me" title="Hi, I'm Bhavesh Wagh" />
           <p className="mt-6 text-lg leading-relaxed text-slate-400">
-            I'm a computer engineering graduate and a{" "}
+            I'm a{" "}
             <span className="font-medium text-emerald-300">
-              Front-End Web Developer
+              Software Engineer
             </span>{" "}
-            with a strong interest in{" "}
-            <span className="font-medium text-slate-200">full-stack</span> web
-            development.
+            with{" "}
+            <span className="font-medium text-slate-200">1.5 years</span> of
+            experience designing and developing scalable, responsive and
+            user-centric web applications. I'm proficient in JavaScript,
+            React.js, Node.js, Express.js and MongoDB.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-slate-400">
-            I'm currently looking for a front-end engineer role, both as an
-            intern and full-time, to keep growing my skills and gain more
-            real-world experience.
+            I'm passionate about solving complex problems, improving user
+            experience and contributing to high-quality products, and I'm
+            focused on continuous learning and professional growth.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-2">
