@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 import ProjectCard from "./ProjectCard";
-import { PROJECTS, SKILLS } from "../utils/data";
+import { PROJECTS, SKILLS, STATS } from "../utils/data";
 import {
   GITHUB_LINK,
   LINKEDIN_URL,
@@ -33,22 +33,24 @@ const Body = () => {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
               </span>
-              Open to internships & full-time roles
+              Open to new opportunities
             </span>
 
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Hi, I'm Bhavesh Wagh.
               <span className="mt-2 block bg-gradient-to-r from-emerald-300 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
-                Front-End Web Developer.
+                MERN Full-Stack Software Engineer.
               </span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-400 md:mx-0">
-              I build responsive, performant web apps with{" "}
-              <span className="text-slate-200">React</span>,{" "}
-              <span className="text-slate-200">Redux Toolkit</span> and{" "}
-              <span className="text-slate-200">Tailwind CSS</span>, and I'm
-              growing toward full-stack development.
+              1.5 years of experience building scalable, responsive and
+              user-centric web applications with{" "}
+              <span className="text-slate-200">React.js</span>,{" "}
+              <span className="text-slate-200">Node.js</span>,{" "}
+              <span className="text-slate-200">Express.js</span> and{" "}
+              <span className="text-slate-200">MongoDB</span>, from modern
+              front-end interfaces to RESTful APIs and authentication systems.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
@@ -90,6 +92,18 @@ const Body = () => {
                 <LinkedinIcon className="h-6 w-6" />
               </a>
             </div>
+
+            <dl className="mx-auto mt-10 grid max-w-md grid-cols-3 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/[0.03] md:mx-0">
+              {STATS.map((stat) => (
+                <div key={stat.label} className="px-3 py-4 text-center">
+                  <dt className="sr-only">{stat.label}</dt>
+                  <dd className="text-2xl font-bold text-white">
+                    {stat.value}
+                  </dd>
+                  <dd className="mt-1 text-xs text-slate-500">{stat.label}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <div className="relative mx-auto w-60 animate-fade-up sm:w-72 md:w-full md:max-w-sm">
@@ -103,7 +117,7 @@ const Body = () => {
             </div>
             <div className="absolute -bottom-2 -left-2 rounded-xl border border-white/10 bg-ink-800/90 px-4 py-2 font-mono text-xs text-slate-300 shadow-xl backdrop-blur sm:-left-6">
               <span className="text-emerald-400">const</span> role ={" "}
-              <span className="text-amber-300">"Frontend"</span>
+              <span className="text-amber-300">"MERN"</span>
             </div>
           </div>
         </div>
@@ -114,8 +128,8 @@ const Body = () => {
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
           <Reveal>
             <SectionHeading eyebrow="Skills" title="Technologies I work with">
-              A toolkit focused on building modern, maintainable user
-              interfaces, plus web hosting and deployment.
+              A full MERN toolkit, from polished front-end interfaces to
+              RESTful APIs, authentication, caching and databases.
             </SectionHeading>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -174,9 +188,8 @@ const Body = () => {
                 Let's build something great together
               </h2>
               <p className="mx-auto mt-4 max-w-xl text-lg text-slate-400">
-                I'm currently looking for front-end roles, both internships and
-                full-time. If you think I'd be a good fit, I'd love to hear
-                from you.
+                I'm open to new Software Engineer opportunities. If you think
+                I'd be a good fit for your team, I'd love to hear from you.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <Link
