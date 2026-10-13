@@ -1,39 +1,48 @@
-.pulser {
-  width: 30px;
-  height: 30px;
-  background: gold;
-  border-radius: 50%;
-  position: relative;
+html {
+  scroll-behavior: smooth;
 }
 
-.pulser::after {
-  animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+body {
+  margin: 0;
+  background-color: #070b14;
+  color: #cbd5e1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
+::selection {
+  background: rgba(52, 211, 153, 0.3);
+  color: #fff;
+}
+
+/* Subtle grid backdrop used behind hero sections */
+.bg-grid {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at top, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at top, black 30%, transparent 75%);
+}
+
+/* Scroll reveal: elements start hidden and fade up once visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  50% {
-    transform: scale(1.4);
-    opacity: 0.4;
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
-
-.pulser::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: yellow;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-/* Decorative styles */
-/* body {
-  display: grid;
-  place-items: center;
-} */
