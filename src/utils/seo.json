@@ -1,0 +1,29 @@
+{
+  "siteUrl": "https://bhavesh-wagh.netlify.app",
+  "routes": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "Bhavesh Wagh | Full-Stack MERN Software Engineer Portfolio",
+      "description": "Bhavesh Wagh is a Software Engineer with 1.5 years of experience building full-stack MERN apps with React.js, Node.js, Express.js and MongoDB."
+    },
+    {
+      "path": "/project",
+      "file": "project.html",
+      "title": "Projects | Bhavesh Wagh, React & MERN Developer",
+      "description": "Web projects built by Bhavesh Wagh with React, Redux, Tailwind CSS and the MERN stack, including a YouTube clone, food ordering app, todo app and movie recommendation app."
+    },
+    {
+      "path": "/about",
+      "file": "about.html",
+      "title": "About Bhavesh Wagh | Full-Stack Software Engineer",
+      "description": "About Bhavesh Wagh, a Software Engineer from India proficient in JavaScript, React.js, Node.js, Express.js and MongoDB, focused on scalable, user-centric web applications."
+    },
+    {
+      "path": "/contact",
+      "file": "contact.html",
+      "title": "Contact Bhavesh Wagh | Software Engineer",
+      "description": "Get in touch with Bhavesh Wagh, a full-stack MERN Software Engineer open to new opportunities. Reach out by email, LinkedIn or GitHub."
+    }
+  ]
+}
